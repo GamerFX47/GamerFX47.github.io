@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FORGE Workout Tracker</title>
+<meta name="description" content="FORGE: an offline workout tracker for Android. No ads, no account, your data stays on your phone.">
+<style>
+  :root {
+    --bg: #f4f5f7; --card: #ffffff; --text: #14161a; --muted: #4b5260; --faint: #6b7280;
+    --line: #e3e6eb; --accent: #4d7c0f; --chip: #ecf7dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0d0f12; --card: #16191e; --text: #f2f4f7; --muted: #b4bac4; --faint: #8b929e;
+      --line: #262b33; --accent: #b9f36b; --chip: #1f2a14;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+  .logo {
+    width: 48px; height: 48px; border-radius: 12px; background: #111418; flex: none;
+    display: grid; place-items: center; color: #b9f36b; font-weight: 900; font-size: 28px; font-style: italic;
+  }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; letter-spacing: -0.01em; }
+  .meta { color: var(--faint); font-size: 14px; margin: 4px 0 24px; }
+  .summary {
+    background: var(--chip); border: 1px solid var(--line); border-radius: 16px;
+    padding: 16px 18px; margin-bottom: 28px;
+  }
+  .summary ul { margin: 8px 0 0; padding-left: 20px; }
+  .summary li { margin: 4px 0; }
+  section {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 18px 20px; margin: 14px 0;
+  }
+  h2 { font-size: 18px; margin: 0 0 8px; }
+  p, li { color: var(--muted); }
+  p { margin: 8px 0; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  strong { color: var(--text); }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; margin-top: 6px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-top: 1px solid var(--line); color: var(--muted); }
+  th { color: var(--text); font-weight: 600; width: 38%; }
+  footer { color: var(--faint); font-size: 14px; margin-top: 28px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">F</div>
+    <h1>FORGE</h1>
+  </header>
+  <p class="meta">An offline workout tracker for Android</p>
+  <div class="summary">
+    <strong>Plan your week, log every set in seconds, and watch your strength grow.</strong>
+    <ul>
+      <li>No ads, ever.</li>
+      <li>Your data is yours: backup, restore, export and import are free forever.</li>
+      <li>Nothing free today becomes paid later.</li>
+    </ul>
+  </div>
+  <section>
+    <h2>Features</h2>
+    <ul>
+      <li>Weekly plans, supersets and warm-up sets</li>
+      <li>Rest timer on the lock screen</li>
+      <li>Personal records, progression hints and per-exercise charts</li>
+      <li>Training year heatmap, streaks and achievements</li>
+      <li>Bodyweight and body measurements</li>
+      <li>Backup, CSV export, and import from FitNotes or Hevy</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Privacy</h2>
+    <p>FORGE has no account and does not use the internet. Everything stays on your phone.
+      Read the <a href="privacy/">privacy policy</a>.</p>
+  </section>
+  <footer>FORGE by Kindstead · <a href="mailto:support@kindstead.dev">support@kindstead.dev</a></footer>
+</main>
+</body>
+</html>
